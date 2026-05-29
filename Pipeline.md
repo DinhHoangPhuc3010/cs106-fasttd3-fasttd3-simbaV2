@@ -1,10 +1,10 @@
-# Hướng dẫn Toàn tập: Triển khai FastTD3 trên HumanoidBench với Modal (A100)
+# Hướng dẫn: Triển khai FastTD3 trên HumanoidBench với Modal (A100)
 
 Tài liệu này ghi chú lại toàn bộ pipeline chuẩn xác để thiết lập, khắc phục lỗi và huấn luyện thuật toán **FastTD3** trên môi trường **HumanoidBench**, sử dụng nền tảng đám mây **Modal (NVIDIA A100 GPU)**.
 
 ---
 
-## Bước 1: Tạo file cấu hình Modal (`modal_jupyter.py`)
+## Bước 1: Tạo file cấu hình Modal (nếu chưa có) (`modal_jupyter.py`)
 
 Trên máy tính cá nhân, tạo một file tên là `modal_jupyter.py` với nội dung dưới đây. Script này sẽ tự động cài đặt PyTorch (CUDA 12.1), các thư viện hệ thống cần thiết, và tải mã nguồn trực tiếp từ nhánh `main` để tránh lỗi thắt cổ chai của HumanoidBench.
 
